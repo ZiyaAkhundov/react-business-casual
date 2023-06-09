@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom';
 import '../index.css'
 export default function nav(){
     return(
@@ -7,10 +8,10 @@ export default function nav(){
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span className="navbar-toggler-icon"></span></button>
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav mx-auto">
-                        <li className="nav-item px-lg-4"><a className="nav-link text-uppercase" href="index.html">Home</a></li>
-                        <li className="nav-item px-lg-4"><a className="nav-link text-uppercase" href="about.html">About</a></li>
-                        <li className="nav-item px-lg-4"><a className="nav-link text-uppercase" href="products.html">Products</a></li>
-                        <li className="nav-item px-lg-4"><a className="nav-link text-uppercase" href="store.html">Store</a></li>
+                        <li className="nav-item px-lg-4"><NavLink className='nav-link text-uppercase' to='/'>Home</NavLink></li>
+                        <li className="nav-item px-lg-4"><NavLink className='nav-link text-uppercase' to='/about'>About</NavLink></li>
+                        <li className="nav-item px-lg-4"><NavLink className='nav-link text-uppercase' to='/product'>Product</NavLink></li>
+                        <li className="nav-item px-lg-4"><NavLink className='nav-link text-uppercase' to='/store'>Store</NavLink></li>
                     </ul>
                 </div>
             </div>
